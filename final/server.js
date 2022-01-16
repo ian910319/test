@@ -13,7 +13,6 @@ import {User, ConnectFour} from './backend/models/connectFour_mongo.js'
 import {sendData, sendStatus} from './backend/wssConnect.js'
 import {licensingcard} from "./backend/uitility/sixNimmt_utilities.js"
 import {checkForWin} from "./backend/uitility/connectFour_utilities.js"
-import initData from "./backend/uitility/initData.js"
 import {SixNimmtRoom, PlayerInfo} from "./backend/models/sixNimmt_mongo.js"
 
 dotenv.config();
@@ -25,10 +24,6 @@ mongoose.connect(process.env.MONGO_URL, {
     console.log("mongo db connection created")
     try {
       await ConnectFour.deleteMany({});
-      await User.deleteMany({});
-      await SixNimmtRoom.deleteMany({});
-      await PlayerInfo.deleteMany({})
-      initData()
     } catch (e) { throw new Error("Database deletion failed"); }
   })
 

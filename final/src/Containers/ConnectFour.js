@@ -47,7 +47,7 @@ const ConnectFour = (props) => {
 
     return(
         <Layout>
-            <Header className="site-layout-background2">
+            <Header className="site-layout-background">
             <Button
             onClick={async()=>{
                 const leaving = props.player.filter((e)=>{return e.name === props.me;})
