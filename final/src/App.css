@@ -1,0 +1,49 @@
+@import '~antd/dist/antd.css';
+
+*{
+  font-family:Comic Sans MS;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.title {
+  display: inline;
+  align-self: center;
+  font-size: 30px;
+  font-family: monospace;
+  position: absolute;
+  color:#3056ff
+}
+
+.trigger{
+  font-size: 20px;
+  color:#A830FF
+}
+#components-layout-demo-custom-trigger .trigger {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+#components-layout-demo-custom-trigger .trigger:hover {
+  color: #1890ff;
+}
+
+#components-layout-demo-custom-trigger .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(245, 155, 103, 0.3);
+}
+
+.site-layout {
+  background: #fff;
+  position: relative;
+  height: 100%;
+}
